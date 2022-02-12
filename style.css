@@ -80,7 +80,6 @@ h1{
     font-size: 5em;
     color: var(--couleur2);
     text-align: center;
-
 }
 h3{
     font-weight: normal;
@@ -151,7 +150,7 @@ h4{
     body{
         font-size: 20px;
     }
-    .button1{
+    .outside_body .button1{
         background-color: var(--couleur2);
         color: var(--couleur3);
         border: none;

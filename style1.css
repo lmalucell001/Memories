@@ -13,12 +13,55 @@ body{
     padding: 0;
     text-decoration: 0;
     overflow-x: hidden;
+    height: 100vh;
 }
 
 /* base styles */
 
 .outside_body{
     background-color: var(--couleur3);
+}
+.outside_body .button1{
+    background-color: var(--couleur2);
+    border: none;
+    border-radius: 3px;
+}
+.titre_home{
+    display: grid;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.outside_body .circle{
+    position: absolute;
+    margin: 0 auto;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    background-color: #92726a;
+    filter: blur(50px);
+}
+.foreground{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+}
+.shake {
+    position: absolute;
+    animation: shake-animation 4.72s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes shake-animation {
+   0% { transform:translate(0,0) }
+  10% { transform:translate(50vw,60vh) }
+  40% { transform:translate(25vw,40vh) }
+  50% { transform:translate(50vw,0) }
+  70% { transform:translate(0,0) }
+  90% { transform:translate(50vw,0) }
+  100% { transform:translate(0,0) }
 }
 
 /* fonts */
@@ -36,39 +79,87 @@ body{
 }
 
 .outside_body h1{
+    margin: 0;
+    padding: 0;
     font-weight: normal;
     font-family: 'Cormorant semi';
     color: var(--couleur2);
+    font-size: 5em;
+    text-align: center;
 }
 .outside_body h3{
+    margin: 0;
+    padding: 0;
     font-weight: normal;
     font-family: 'Zenkaku Bold';
     color: var(--couleur6);
+    font-size: 2.5em;
+    text-align: center;
 }
 .outside_body p{
     font-weight: normal;
     font-family: 'Zenkaku medium';
 }
-.outside_body button{
+.outside_body .button1{
     font-weight: normal;
     font-family: 'Zenkaku medium';
     color: var(--couleur3);
+    font-size: 1.5em;
 }
 /* mobile styles */
 
 /* small tablet styles*/
+@media screen and (max-width: 619px){
+    body{
+        font-size: 10px;
+    }
+    .outside_body .button1{
+        width: 291px;
+        height: 56px;
+        font-size: 22px;
+    }
+}
 @media screen and (min-width: 620px){
-
+    .outside_body .button1{
+        width: 296px;
+        height: 56px;
+        font-size: 22px;
+    }
 }
 
 /* large tablet & laptop styles*/
 @media screen and (min-width: 960px){
-
+    body{
+        font-size: 18px;
+    }
+    .outside_body .button1{
+        width: 330px;
+        height: 60px;
+        font-size: 25px;
+    }
 }
 
 /* desktop styles*/
 @media screen and (min-width: 1200px){
-
+    body{
+        font-size: 20px;
+    }
+    .outside_body .button1{
+        width: 400px;
+        height: 70px;
+        border-radius: 3px;
+        font-size: 30px;
+    }
 }
 
 /* grid testing */
+.projects{    
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.projects a{
+    text-align: center;
+    padding: 20px;
+}
