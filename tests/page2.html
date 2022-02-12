@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 1</title>
+</head>
+<script>
+    function getfrom(){
+        var tabl1 = sessionStorage.getItem("tableau1");
+        var tabl2 = sessionStorage.getItem("tableau2");
+        var tabl3 = sessionStorage.getItem("tableau3");
+        console.log(tabl1);
+        console.log(tabl2);
+        console.log(tabl3);
+        if(tabl1 == "1"){
+            document.getElementById("tableau1style").style.filter="none";
+        }
+        if(tabl2 == "1"){
+            document.getElementById("tableau2style").style.filter="none";
+        }
+        if(tabl3 == "1"){
+            document.getElementById("tableau3style").style.filter="none";
+        }
+        sessionStorage.clear();
+    }
+</script>
+<body>
+    <input type="button" value="vérifier" onclick="getfrom()"/>
+    <div style="margin-top: 10px;"><img id="tableau1style" src="../assets/papillon.jpg" height="100px" width="100px" alt="" style="filter: saturate(0%) blur(5px);"></div>
+    <div style="margin-top: 10px;"><img id="tableau2style" src="../assets/papillon.jpg" height="100px" width="100px" alt="" style="filter: saturate(0%) blur(5px);"></div>
+    <div style="margin-top: 10px;"><img id="tableau3style" src="../assets/papillon.jpg" height="100px" width="100px" alt="" style="filter: saturate(0%) blur(5px);"></div>
+</body>
+</html>

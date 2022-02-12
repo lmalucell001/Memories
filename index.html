@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="anim.css">
     <title>Memories</title>
 </head>
+<script>
+    function store(){
+        var tabl1 = "0";
+        var tabl2 = "0";
+        var tabl3 = "0";
+        sessionStorage.setItem("tableau1", tabl1);
+        sessionStorage.setItem("tableau2", tabl2);
+        sessionStorage.setItem("tableau3", tabl3);
+        location.href = "./selection.html";
+    }
+</script>
 <body class="outside_body">
     <div style="height: 100vh; width: 100%;position: absolute;">
         <div class="shake">
@@ -36,7 +48,7 @@
             </div>
         </div>
         <div class="projects grid" style="margin: 0 auto;">
-            <a><button class="button1 grid" onclick="window.location.href='https://youtu.be/dQw4w9WgXcQ'">Démarrer l'expérience</button></a>
+            <a><button class="button1 grid" onclick="store()">Démarrer l'expérience</button></a>
         </div>
     </div>
 </body>

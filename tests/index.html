@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page 1</title>
+</head>
+<script>
+    function store(){
+        var tabl1 = "1";
+        var tabl2 = "1";
+        var tabl3 = "0";
+        sessionStorage.setItem("tableau1", tabl1);
+        sessionStorage.setItem("tableau2", tabl2);
+        sessionStorage.setItem("tableau3", tabl3);
+        location.href = "./page2.html";
+    }
+</script>
+<body>
+    <input type="button" value="tableau1" onclick="store()"/>
+    <a href="./page2.html"></a>
+</body>
+</html>

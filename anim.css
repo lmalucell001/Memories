@@ -1,0 +1,163 @@
+:root{
+    --couleur1: #22223B;
+    --couleur2: #454163;
+    --couleur3: #F2E9E4;
+    --couleur4: #C9ADA7;
+    --couleur6: #BC9289;
+    --couleur7: #03030c;
+}
+.inside_body .circle{
+    position: absolute;
+    margin: 0 auto;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    background-color: var(--couleur7);
+    filter: blur(50px);
+}
+.inside_body .circle1{
+    position: absolute;
+    margin: 0 auto;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    background-color: var(--couleur7);
+    opacity: 40%;
+    filter: blur(50px);
+}
+
+.inside_body .circle2{
+    position: absolute;
+    margin: 0 auto;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    background-color: var(--couleur7);
+    filter: blur(50px);
+    opacity: 40%;
+}
+.inside_body .circle3{
+    position: absolute;
+    margin: 0 auto;
+    height: 16vh;
+    width: 16vh;
+    border-radius: 50%;
+    background-color: var(--couleur7);
+    filter: blur(50px);
+    opacity: 40%;
+}
+
+.outside_body .circle{
+    position: absolute;
+    margin: 0 auto;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    background-color: #CDA69D;
+    filter: blur(50px);
+    opacity: 40%;
+}
+.outside_body .circle1{
+    position: absolute;
+    margin: 0 auto;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    background-color: #CDA69D;
+    opacity: 40%;
+    filter: blur(50px);
+}
+.outside_body .circle2{
+    position: absolute;
+    margin: 0 auto;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    background-color: #CDA69D;
+    filter: blur(50px);
+    opacity: 40%;
+}
+.outside_body .circle3{
+    position: absolute;
+    margin: 0 auto;
+    height: 16vh;
+    width: 16vh;
+    border-radius: 50%;
+    background-color: #CDA69D;
+    filter: blur(50px);
+    opacity: 40%;
+}
+.foreground{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+}
+.shake {
+    position: absolute;
+    animation: shake-animation 20s ease infinite;
+    transform-origin: 50% 50%;
+}
+.shake1 {
+    position: absolute;
+    animation: shake-animation1 19s ease infinite;
+    transform-origin: 50% 50%;
+}
+.shake2 {
+    position: absolute;
+    animation: shake-animation2 20s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+.shake3 {
+    position: absolute;
+    animation: shake-animation3 16s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes shake-animation {
+   0% { transform:translate(0,0) }
+  10% { transform:translate(35vw,40vh) }
+  20% { transform:translate(25vw,40vh) }
+  30% { transform:translate(50vw,25vh) }
+  40% { transform:translate(17vw,10vh) }
+  50% { transform:translate(50vw,26vh) }
+  60% { transform:translate(30vw,30vh) }
+  70% { transform:translate(0,10vh) }
+  90% { transform:translate(50vw,5vh) }
+  100% { transform:translate(0,0) }
+}
+
+@keyframes shake-animation1 {
+    0% { transform:translate(100vw,40vh) }
+   10% { transform:translate(50vw,0vh) }
+   40% { transform:translate(50vw,0vh) }
+   50% { transform:translate(45vw,10vh) }
+   70% { transform:translate(0,50vh) }
+   90% { transform:translate(50vw,0) }
+   100% { transform:translate(100vw,40vh) }
+ }
+
+ @keyframes shake-animation2 {
+    0% { transform:translate(5vw,90vh) }
+   10% { transform:translate(20vw,70vh) }
+   20% { transform:translate(100vw,100vh) }
+   30% { transform:translate(50vw,50vh) }
+   40% { transform:translate(10vw,65vh) }
+   10% { transform:translate(20vw,70vh) }
+   0% { transform:translate(5vw,90vh) }
+   20% { transform:translate(100vw,100vh) }
+   40% { transform:translate(10vw,65vh) }
+   10% { transform:translate(20vw,70vh) }
+   20% { transform:translate(5vw,90vh) }
+ }
+
+ @keyframes shake-animation3 {
+    0% { transform:translate(0,0) }
+   10% { transform:translate(50vw,60vh) }
+   40% { transform:translate(25vw,40vh) }
+   50% { transform:translate(50vw,0) }
+   70% { transform:translate(0,0) }
+   90% { transform:translate(50vw,0) }
+   100% { transform:translate(0,0) }
+ }
