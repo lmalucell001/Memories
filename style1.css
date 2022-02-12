@@ -1,0 +1,74 @@
+/* variables */
+:root{
+    --couleur1: #22223B;
+    --couleur2: #454163;
+    --couleur3: #F2E9E4;
+    --couleur4: #C9ADA7;
+    --couleur6: #BC9289;
+}
+
+/* reset */
+body{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    overflow-x: hidden;
+}
+
+/* base styles */
+
+.outside_body{
+    background-color: var(--couleur3);
+}
+
+/* fonts */
+@font-face{
+    font-family: 'Cormorant semi';
+    src: url('assets/fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf')
+}
+@font-face{
+    font-family: 'Zenkaku Medium';
+    src: url('assets/fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Medium.ttf');
+}
+@font-face{
+    font-family: 'Zenkaku Bold';
+    src: url('assets/fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Bold.ttf');
+}
+
+.outside_body h1{
+    font-weight: normal;
+    font-family: 'Cormorant semi';
+    color: var(--couleur2);
+}
+.outside_body h3{
+    font-weight: normal;
+    font-family: 'Zenkaku Bold';
+    color: var(--couleur6);
+}
+.outside_body p{
+    font-weight: normal;
+    font-family: 'Zenkaku medium';
+}
+.outside_body button{
+    font-weight: normal;
+    font-family: 'Zenkaku medium';
+    color: var(--couleur3);
+}
+/* mobile styles */
+
+/* small tablet styles*/
+@media screen and (min-width: 620px){
+
+}
+
+/* large tablet & laptop styles*/
+@media screen and (min-width: 960px){
+
+}
+
+/* desktop styles*/
+@media screen and (min-width: 1200px){
+
+}
+
+/* grid testing */

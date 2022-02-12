@@ -1,0 +1,175 @@
+/* variables */
+:root{
+    --couleur1: #22223B;
+    --couleur2: #454163;
+    --couleur3: #F2E9E4;
+    --couleur4: #C9ADA7;
+    --couleur6: #BC9289;
+}
+
+/* reset */
+
+body,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+}
+li{
+    list-style-type: none;
+}
+
+/* base styles */
+body{
+    overflow-x: hidden;
+    font-family: 'Rubik Regular';
+}
+.button{
+    background : none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display: inline-block;
+}
+.button:hover{
+    color: #222;
+    background: var(--primary);
+}
+input,textarea{
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid #9893d8;
+    color: #f2f2f2;
+}
+.outside_body{
+    background-color: var(--couleur3);
+}
+
+.circle {
+    background: lightblue;
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    /*filter: blur(50px);*/
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 0%;
+    padding-top: 0%;
+}
+
+/* fonts */
+@font-face{
+    font-family: 'Cormorant semi';
+    src: url('assets/fonts/Cormorant_Garamond/CormorantGaramond-SemiBold.ttf')
+}
+@font-face{
+    font-family: 'Zenkaku Medium';
+    src: url('assets/fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Medium.ttf');
+}
+@font-face{
+    font-family: 'Zenkaku Bold';
+    src: url('assets/fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Bold.ttf');
+}
+
+h1{
+    font-weight: normal;
+    font-family: 'Cormorant Semi';
+    font-size: 5em;
+    color: var(--couleur2);
+    text-align: center;
+
+}
+h3{
+    font-weight: normal;
+    font-size: 2.5em;
+    color: var(--couleur6);
+    text-align: center;
+    font-family: 'Zenkaku Bold';
+}
+.button1{
+    background-color: var(--couleur2);
+    color: var(--couleur3);
+    border: none;
+    width: 291px;
+    height: 52px;
+    border-radius: 3px;
+    font-family: 'Zenkaku Medium';
+    font-size: 1.5em;
+}
+.button12{
+    background-color: var(--couleur2);
+    color: var(--couleur3);
+    border: none;
+    width: 291px;
+}
+.button2{
+    background-color: var(--couleur2);
+    color: var(--couleur3);
+    border: none;
+    width: 291px;
+}
+.button22{
+    background-color: var(--couleur2);
+    color: var(--couleur3);
+    border: none;
+    width: 291px;
+}
+p,a,li{
+    color: #9893D8;
+}
+h2{
+    font-size: 1.6em;
+}
+h4{
+    font-size: 1.1em;
+}
+.leading{
+    font-size: 1.1em;
+}
+
+/* mobile styles */
+
+/* small tablet styles*/
+@media screen and (min-width: 620px){
+
+}
+
+/* large tablet & laptop styles*/
+@media screen and (min-width: 960px){
+
+    body{
+        font-size: 18px;
+    }
+}
+
+/* desktop styles*/
+@media screen and (min-width: 1200px){
+
+    body{
+        font-size: 20px;
+    }
+    .button1{
+        background-color: var(--couleur2);
+        color: var(--couleur3);
+        border: none;
+        width: 330px;
+        height: 72px;
+        border-radius: 3px;
+        font-family: 'Zenkaku Medium';
+        font-size: 1.5em;
+    }
+}
+
+/* grid testing */
+.projects{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .projects a{
+    text-align: center;
+    padding: 20px;
+  }
