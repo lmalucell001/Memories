@@ -8,57 +8,185 @@
 }
 
 /* reset */
-
-body,p,a,ul,li{
+body{
     margin: 0;
     padding: 0;
     text-decoration: 0;
-}
-li{
-    list-style-type: none;
+    overflow-x: hidden;
+    height: 100vh;
 }
 
 /* base styles */
-body{
-    overflow-x: hidden;
-    font-family: 'Rubik Regular';
-}
-.button{
-    background : none;
-    border: 2px solid var(--primary);
-    color: var(--primary);
-    padding: 6px 12px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
-    display: inline-block;
-}
-.button:hover{
-    color: #222;
-    background: var(--primary);
-}
-input,textarea{
-    background: rgba(255, 255, 255, 0.05);
-    padding: 10px 16px;
-    border-radius: 20px;
-    border: 2px solid #9893d8;
-    color: #f2f2f2;
-}
+
 .outside_body{
     background-color: var(--couleur3);
 }
-
-.circle {
-    background: lightblue;
-    border-radius: 50%;
-    width: 500px;
-    height: 500px;
-    /*filter: blur(50px);*/
-    position: absolute;
-    margin-left: 20%;
-    margin-top: 0%;
-    padding-top: 0%;
+.outside_body .button1{
+    background-color: var(--couleur2);
+    border: none;
+    border-radius: 3px;
 }
+.titre_home{
+    display: grid;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.inside_body .circle{
+    position: absolute;
+    margin: 0 auto;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    background-color: #92726a;
+    filter: blur(50px);
+}
+.inside_body .circle1{
+    position: absolute;
+    margin: 0 auto;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    background-color: #92726a;
+    opacity: 30%;
+    filter: blur(50px);
+}
+.inside_body .circle2{
+    position: absolute;
+    margin: 0 auto;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    background-color: #92726a;
+    filter: blur(50px);
+    opacity: 30%;
+}
+.inside_body .circle3{
+    position: absolute;
+    margin: 0 auto;
+    height: 16vh;
+    width: 16vh;
+    border-radius: 50%;
+    background-color: #92726a;
+    filter: blur(50px);
+    opacity: 30%;
+}
+
+.outside_body .circle{
+    position: absolute;
+    margin: 0 auto;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+    background-color: #92726a;
+    filter: blur(50px);
+    opacity: 30%;
+}
+.outside_body .circle1{
+    position: absolute;
+    margin: 0 auto;
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    background-color: #92726a;
+    opacity: 30%;
+    filter: blur(50px);
+}
+.outside_body .circle2{
+    position: absolute;
+    margin: 0 auto;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    background-color: #92726a;
+    filter: blur(50px);
+    opacity: 30%;
+}
+.outside_body .circle3{
+    position: absolute;
+    margin: 0 auto;
+    height: 16vh;
+    width: 16vh;
+    border-radius: 50%;
+    background-color: #92726a;
+    filter: blur(50px);
+    opacity: 30%;
+}
+.foreground{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 99;
+}
+.shake {
+    position: absolute;
+    animation: shake-animation 20s ease infinite;
+    transform-origin: 50% 50%;
+}
+.shake1 {
+    position: absolute;
+    animation: shake-animation1 19s ease infinite;
+    transform-origin: 50% 50%;
+}
+.shake2 {
+    position: absolute;
+    animation: shake-animation2 20s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+.shake3 {
+    position: absolute;
+    animation: shake-animation3 16s ease infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes shake-animation {
+   0% { transform:translate(0,0) }
+  10% { transform:translate(35vw,40vh) }
+  20% { transform:translate(25vw,40vh) }
+  30% { transform:translate(50vw,25vh) }
+  40% { transform:translate(17vw,10vh) }
+  50% { transform:translate(50vw,26vh) }
+  60% { transform:translate(30vw,30vh) }
+  70% { transform:translate(0,10vh) }
+  90% { transform:translate(50vw,5vh) }
+  100% { transform:translate(10vw,0) }
+}
+
+@keyframes shake-animation1 {
+    0% { transform:translate(100vw,40vh) }
+   10% { transform:translate(50vw,0vh) }
+   40% { transform:translate(50vw,0vh) }
+   50% { transform:translate(45vw,10vh) }
+   70% { transform:translate(0,50vh) }
+   90% { transform:translate(50vw,0) }
+   100% { transform:translate(100vw,40vh) }
+ }
+
+ @keyframes shake-animation2 {
+    0% { transform:translate(5vw,90vh) }
+   10% { transform:translate(20vw,70vh) }
+   20% { transform:translate(100vw,100vh) }
+   30% { transform:translate(50vw,50vh) }
+   40% { transform:translate(10vw,65vh) }
+   10% { transform:translate(20vw,70vh) }
+   0% { transform:translate(5vw,90vh) }
+   20% { transform:translate(100vw,100vh) }
+   40% { transform:translate(10vw,65vh) }
+   10% { transform:translate(20vw,70vh) }
+   20% { transform:translate(100vw,100vh) }
+ }
+
+ @keyframes shake-animation3 {
+    0% { transform:translate(0,0) }
+   10% { transform:translate(50vw,60vh) }
+   40% { transform:translate(25vw,40vh) }
+   50% { transform:translate(50vw,0) }
+   70% { transform:translate(0,0) }
+   90% { transform:translate(50vw,0) }
+   100% { transform:translate(0,0) }
+ }
 
 /* fonts */
 @font-face{
@@ -74,101 +202,88 @@ input,textarea{
     src: url('assets/fonts/Zen_Kaku_Gothic_Antique/ZenKakuGothicAntique-Bold.ttf');
 }
 
-h1{
+.outside_body h1{
+    margin: 0;
+    padding: 0;
     font-weight: normal;
-    font-family: 'Cormorant Semi';
-    font-size: 5em;
+    font-family: 'Cormorant semi';
     color: var(--couleur2);
+    font-size: 5em;
     text-align: center;
 }
-h3{
+.outside_body h3{
+    margin: 0;
+    padding: 0;
     font-weight: normal;
-    font-size: 2.5em;
-    color: var(--couleur6);
-    text-align: center;
     font-family: 'Zenkaku Bold';
+    color: var(--couleur6);
+    font-size: 2.5em;
+    text-align: center;
 }
-.button1{
-    background-color: var(--couleur2);
+.outside_body p{
+    font-weight: normal;
+    font-family: 'Zenkaku medium';
+}
+.outside_body .button1{
+    font-weight: normal;
+    font-family: 'Zenkaku medium';
     color: var(--couleur3);
-    border: none;
-    width: 291px;
-    height: 52px;
-    border-radius: 3px;
-    font-family: 'Zenkaku Medium';
     font-size: 1.5em;
 }
-.button12{
-    background-color: var(--couleur2);
-    color: var(--couleur3);
-    border: none;
-    width: 291px;
-}
-.button2{
-    background-color: var(--couleur2);
-    color: var(--couleur3);
-    border: none;
-    width: 291px;
-}
-.button22{
-    background-color: var(--couleur2);
-    color: var(--couleur3);
-    border: none;
-    width: 291px;
-}
-p,a,li{
-    color: #9893D8;
-}
-h2{
-    font-size: 1.6em;
-}
-h4{
-    font-size: 1.1em;
-}
-.leading{
-    font-size: 1.1em;
-}
-
 /* mobile styles */
 
 /* small tablet styles*/
+@media screen and (max-width: 619px){
+    body{
+        font-size: 10px;
+    }
+    .outside_body .button1{
+        width: 291px;
+        height: 56px;
+        font-size: 22px;
+    }
+}
 @media screen and (min-width: 620px){
-
+    .outside_body .button1{
+        width: 296px;
+        height: 56px;
+        font-size: 22px;
+    }
 }
 
 /* large tablet & laptop styles*/
 @media screen and (min-width: 960px){
-
     body{
         font-size: 18px;
+    }
+    .outside_body .button1{
+        width: 330px;
+        height: 60px;
+        font-size: 25px;
     }
 }
 
 /* desktop styles*/
 @media screen and (min-width: 1200px){
-
     body{
         font-size: 20px;
     }
     .outside_body .button1{
-        background-color: var(--couleur2);
-        color: var(--couleur3);
-        border: none;
-        width: 330px;
-        height: 72px;
+        width: 400px;
+        height: 70px;
         border-radius: 3px;
-        font-family: 'Zenkaku Medium';
-        font-size: 1.5em;
+        font-size: 30px;
     }
 }
 
 /* grid testing */
-.projects{
+.projects{    
+    height: 50vh;
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
-  }
-  .projects a{
+}
+.projects a{
     text-align: center;
     padding: 20px;
-  }
+}
