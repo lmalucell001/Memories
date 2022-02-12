@@ -39,7 +39,7 @@ body{
     height: 10vh;
     width: 10vh;
     border-radius: 50%;
-    background-color: #92726a;
+    background-color: #CDA69D;
     filter: blur(50px);
 }
 .inside_body .circle1{
@@ -48,8 +48,8 @@ body{
     height: 20vh;
     width: 20vh;
     border-radius: 50%;
-    background-color: #92726a;
-    opacity: 30%;
+    background-color: #CDA69D;
+    opacity: 40%;
     filter: blur(50px);
 }
 .inside_body .circle2{
@@ -58,9 +58,9 @@ body{
     height: 30vh;
     width: 30vh;
     border-radius: 50%;
-    background-color: #92726a;
+    background-color: #CDA69D;
     filter: blur(50px);
-    opacity: 30%;
+    opacity: 40%;
 }
 .inside_body .circle3{
     position: absolute;
@@ -68,9 +68,9 @@ body{
     height: 16vh;
     width: 16vh;
     border-radius: 50%;
-    background-color: #92726a;
+    background-color: #CDA69D;
     filter: blur(50px);
-    opacity: 30%;
+    opacity: 40%;
 }
 
 .outside_body .circle{
@@ -79,9 +79,9 @@ body{
     height: 10vh;
     width: 10vh;
     border-radius: 50%;
-    background-color: #92726a;
+    background-color: #CDA69D;
     filter: blur(50px);
-    opacity: 30%;
+    opacity: 40%;
 }
 .outside_body .circle1{
     position: absolute;
@@ -89,8 +89,8 @@ body{
     height: 20vh;
     width: 20vh;
     border-radius: 50%;
-    background-color: #92726a;
-    opacity: 30%;
+    background-color: #CDA69D;
+    opacity: 40%;
     filter: blur(50px);
 }
 .outside_body .circle2{
@@ -99,9 +99,9 @@ body{
     height: 30vh;
     width: 30vh;
     border-radius: 50%;
-    background-color: #92726a;
+    background-color: #CDA69D;
     filter: blur(50px);
-    opacity: 30%;
+    opacity: 40%;
 }
 .outside_body .circle3{
     position: absolute;
@@ -109,9 +109,9 @@ body{
     height: 16vh;
     width: 16vh;
     border-radius: 50%;
-    background-color: #92726a;
+    background-color: #CDA69D;
     filter: blur(50px);
-    opacity: 30%;
+    opacity: 40%;
 }
 .foreground{
     position: absolute;
