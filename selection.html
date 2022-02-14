@@ -8,6 +8,46 @@
     <link rel="stylesheet" href="anim.css">
     <title>Memories</title>
 </head>
+<script>
+    function getfrom(){
+        var tabl1 = sessionStorage.getItem("tableau1");
+        var tabl2 = sessionStorage.getItem("tableau2");
+        var tabl3 = sessionStorage.getItem("tableau3");
+        console.log(tabl1);
+        console.log(tabl2);
+        console.log(tabl3);
+        if(tabl1 == "1"){
+            document.getElementById("tableau1style").style.filter="none";
+        }
+        if(tabl2 == "1"){
+            document.getElementById("tableau2style").style.filter="none";
+        }
+        if(tabl3 == "1"){
+            document.getElementById("tableau3style").style.filter="none";
+        }
+    }    
+    getfrom();
+
+    function store(){
+        sessionStorage.setItem("tableau1", tabl1);
+        sessionStorage.setItem("tableau2", tabl2);
+        sessionStorage.setItem("tableau3", tabl3);
+        location.href = "./selection.html";
+    }
+
+    function souv1(){
+        location.href = "./premiersouvenir.html";
+        store()
+    }
+    function souv2(){
+        location.href = "./secondsouvenir.html";
+        store()
+    }
+    function souv3(){
+        location.href = "./troisiemesouvenir.html";
+        store()
+    }
+</script>
 
 <body class="outside_body">
 
@@ -40,15 +80,15 @@
         </div>
 
         <div class="image_sel">
-            <img id="tableau1style" src="./assets/paysage_vide_sel.jpg" width="200px" alt="" style="filter: saturate(0) blur(7px);" onclick="location.href='./premiersouvenir.html';"><br>
+            <img id="tableau1style" src="./assets/paysage_vide_sel.jpg" width="200px" alt="" style="filter: saturate(0) blur(7px);" onclick="souv1()"><br>
         </div>
 
         <div class="image_sel">
-            <img id="tableau2style" src="./assets/lisiere_sel.jpg"width="200px" alt="" style="filter: saturate(0) blur(7px);">
+            <img id="tableau2style" src="./assets/lisiere_sel.jpg"width="200px" alt="" style="filter: saturate(0) blur(7px);" onclick="souv2()">
         </div>
 
         <div class="image_sel">
-            <img id="tableau3style" src="./assets/dordogne_sel.jpg"width="200px" alt="" style="filter: saturate(0) blur(7px);">
+            <img id="tableau3style" src="./assets/dordogne_sel.jpg"width="200px" alt="" style="filter: saturate(0) blur(7px);" onclick="souv3()">
         </div>
 
         <div class="titre_selection grid">
@@ -58,24 +98,4 @@
         </div>
     </div>
 </body>
-<script>
-    function getfrom(){
-        var tabl1 = sessionStorage.getItem("tableau1");
-        var tabl2 = sessionStorage.getItem("tableau2");
-        var tabl3 = sessionStorage.getItem("tableau3");
-        console.log(tabl1);
-        console.log(tabl2);
-        console.log(tabl3);
-        if(tabl1 == "1"){
-            document.getElementById("tableau1style").style.filter="none";
-        }
-        if(tabl2 == "1"){
-            document.getElementById("tableau2style").style.filter="none";
-        }
-        if(tabl3 == "1"){
-            document.getElementById("tableau3style").style.filter="none";
-        }
-    }
-    getfrom();
-</script>
 </html>

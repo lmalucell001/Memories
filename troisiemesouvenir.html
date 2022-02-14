@@ -33,11 +33,10 @@
         <div class="foregroundinside" style="z-index: 100;">
             <div class="retourSel grid" style="margin: 0 auto;" >
                 <a><button class="button1 grid" onclick="storeu()">Revenir aux souvenirs</button></a>
-
             </div>
     
             <div class="image_sel">
-                <img id="tableau1style" src="./assets/paysage_vide.jpg" width="400px" alt="" style="filter: saturate(0) blur(7px);" onclick="incr()"><br>
+                <img id="tableau1style" src="./assets/dordogne.jpg" width="400px" alt="" style="filter: saturate(0) blur(7px);" onclick="incr()"><br>
             </div>
     
             <div class="histoire grid">
@@ -53,13 +52,13 @@
     </div>
 </body>
 <script>
-    var tabl1 = "1";
+    var tabl1;
     var tabl2;
-    var tabl3;
+    var tabl3 = "1";
 
     function getfrom(){
+        var tabl1 = sessionStorage.getItem("tableau1");
         var tabl2 = sessionStorage.getItem("tableau2");
-        var tabl3 = sessionStorage.getItem("tableau3");
         console.log(tabl1);
         console.log(tabl2);
         console.log(tabl3);
@@ -86,9 +85,6 @@
             document.getElementById("appearsuivant").innerHTML = '<a><button class="suivantbutton grid" >suivant</button></a>';
         }
         
-    }
-    function hello() {
-        alert('Hello');
     }
     getfrom();
 </script>

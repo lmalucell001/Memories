@@ -93,29 +93,58 @@
     width: 100%;
     z-index: 99;
 }
-.shake {
-    position: absolute;
-    animation: shake-animation 20s ease infinite;
-    transform-origin: 50% 50%;
-}
-.shake1 {
-    position: absolute;
-    animation: shake-animation1 19s ease infinite;
-    transform-origin: 50% 50%;
-}
-.shake2 {
-    position: absolute;
-    animation: shake-animation2 20s ease infinite;
-    transform-origin: 50% 50%;
+
+/*------------------Mobile---------------------*/
+@media screen and (max-width: 619px){
+    .shake {
+        position: absolute;
+        animation: shake-animation-phone 20s ease infinite;
+        transform-origin: 50% 50%;
+    }
+    .shake1 {
+        position: absolute;
+        animation: shake-animation-phone-1 20s ease infinite;
+        transform-origin: 50% 50%;
+    }
+    .shake2 {
+        position: absolute;
+        animation: shake-animation-phone-2 20s ease infinite;
+        transform-origin: 50% 50%;
+    }
+
+    .shake3 {
+        position: absolute;
+        animation: shake-animation-phone-3 20s ease infinite;
+        transform-origin: 50% 50%;
+    }
 }
 
-.shake3 {
-    position: absolute;
-    animation: shake-animation3 16s ease infinite;
-    transform-origin: 50% 50%;
+/*------------------desktop---------------------*/
+@media screen and (min-width: 620px){
+    .shake {
+        position: absolute;
+        animation: shake-animation-desktop 20s ease infinite;
+        transform-origin: 50% 50%;
+    }
+    .shake1 {
+        position: absolute;
+        animation: shake-animation-desktop-1 20s ease infinite;
+        transform-origin: 50% 50%;
+    }
+    .shake2 {
+        position: absolute;
+        animation: shake-animation-desktop-2 20s ease infinite;
+        transform-origin: 50% 50%;
+    }
+    
+    .shake3 {
+        position: absolute;
+        animation: shake-animation-desktop-3 20s ease infinite;
+        transform-origin: 50% 50%;
+    }
 }
-
-@keyframes shake-animation {
+/*--------------------------------Animation Mobile-------------------*/
+@keyframes shake-animation-phone {
    0% { transform:translate(0,0) }
   10% { transform:translate(35vw,40vh) }
   20% { transform:translate(25vw,40vh) }
@@ -128,36 +157,86 @@
   100% { transform:translate(0,0) }
 }
 
-@keyframes shake-animation1 {
-    0% { transform:translate(100vw,40vh) }
+@keyframes shake-animation-phone-1 {
+    0% { transform:translate(50vw,40vh) }
    10% { transform:translate(50vw,0vh) }
    40% { transform:translate(50vw,0vh) }
    50% { transform:translate(45vw,10vh) }
    70% { transform:translate(0,50vh) }
    90% { transform:translate(50vw,0) }
-   100% { transform:translate(100vw,40vh) }
+   100% { transform:translate(50vw,40vh) }
  }
 
- @keyframes shake-animation2 {
-    0% { transform:translate(5vw,90vh) }
-   10% { transform:translate(20vw,70vh) }
-   20% { transform:translate(100vw,100vh) }
+ @keyframes shake-animation-phone-2 {
+    0% { transform:translate(5vw,50vh) }
+   10% { transform:translate(20vw,30vh) }
+   20% { transform:translate(50vw,40vh) }
    30% { transform:translate(50vw,50vh) }
-   40% { transform:translate(10vw,65vh) }
-   10% { transform:translate(20vw,70vh) }
-   0% { transform:translate(5vw,90vh) }
-   20% { transform:translate(100vw,100vh) }
-   40% { transform:translate(10vw,65vh) }
-   10% { transform:translate(20vw,70vh) }
-   20% { transform:translate(5vw,90vh) }
+   40% { transform:translate(10vw,20vh) }
+   50% { transform:translate(20vw,50vh) }
+   60% { transform:translate(5vw,40vh) }
+   70% { transform:translate(50vw,10vh) }
+   80% { transform:translate(10vw,50vh) }
+   90% { transform:translate(20vw,20vh) }
+   100% { transform:translate(5vw,50vh) }
  }
 
- @keyframes shake-animation3 {
+ @keyframes shake-animation-phone-3 {
     0% { transform:translate(0,0) }
-   10% { transform:translate(50vw,60vh) }
+   10% { transform:translate(50vw,50vh) }
    40% { transform:translate(25vw,40vh) }
    50% { transform:translate(50vw,0) }
    70% { transform:translate(0,0) }
    90% { transform:translate(50vw,0) }
    100% { transform:translate(0,0) }
  }
+
+ /*--------------------------------Animation desktop-------------------*/
+
+ 
+ @keyframes shake-animation-desktop {
+    0% { transform:translate(0,0) }
+   10% { transform:translate(35vw,40vh) }
+   20% { transform:translate(25vw,40vh) }
+   30% { transform:translate(50vw,25vh) }
+   40% { transform:translate(17vw,10vh) }
+   50% { transform:translate(60vw,26vh) }
+   60% { transform:translate(30vw,30vh) }
+   70% { transform:translate(0,10vh) }
+   90% { transform:translate(60vw,5vh) }
+   100% { transform:translate(0,0) }
+ }
+ 
+ @keyframes shake-animation-desktop-1 {
+     0% { transform:translate(50vw,40vh) }
+    10% { transform:translate(60vw,0vh) }
+    40% { transform:translate(40vw,0vh) }
+    50% { transform:translate(45vw,10vh) }
+    70% { transform:translate(0,30vh) }
+    90% { transform:translate(90vw,0) }
+    100% { transform:translate(50vw,40vh) }
+  }
+ 
+  @keyframes shake-animation-desktop-2 {
+     0% { transform:translate(5vw,50vh) }
+    10% { transform:translate(20vw,30vh) }
+    20% { transform:translate(100vw,40vh) }
+    30% { transform:translate(10vw,100vh) }
+    40% { transform:translate(10vw,20vh) }
+    50% { transform:translate(20vw,40vh) }
+    60% { transform:translate(5vw,40vh) }
+    70% { transform:translate(30vw,10vh) }
+    80% { transform:translate(10vw,30vh) }
+    90% { transform:translate(20vw,20vh) }
+    100% { transform:translate(5vw,50vh) }
+  }
+ 
+  @keyframes shake-animation-desktop-3 {
+     0% { transform:translate(0,0) }
+    10% { transform:translate(50vw,30vh) }
+    40% { transform:translate(25vw,40vh) }
+    50% { transform:translate(60vw,0) }
+    70% { transform:translate(0,0) }
+    90% { transform:translate(40vw,0) }
+    100% { transform:translate(0,0) }
+  }
