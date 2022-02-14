@@ -46,7 +46,7 @@
             </div>
             <div class="suivant grid" style="margin: 0 auto;">
                 <div id="appearprecedent" style="display: flex;justify-content: center;align-items: center;"></div>
-                <div id="appearsuivant" style="display: flex;justify-content: center;align-items: center;"></div>
+                <div id="appearsuivant" style="display: flex;justify-content: center;align-items: center;"><a><button id="nextbtn" class="suivantbutton grid" onclick="incr()" >Suivant</button></a></div>
             </div>
         </div>
     </div>
@@ -74,17 +74,61 @@
     var taille = 1;
     function incr(){
         taille = taille + 1;
+        
+        if(taille == 1){
+            document.getElementById("tableau1style").width = "400";
+            document.getElementById("tableau1style").style.filter="saturate(0%) blur(7px)";
+            document.getElementById("appearprecedent").innerHTML = '';        
+        }
         if(taille == 2){
             document.getElementById("tableau1style").width = "350";
-            document.getElementById("tableau1style").style.filter="saturate(50%) blur(4px)";            
+            document.getElementById("tableau1style").style.filter="saturate(50%) blur(4px)";
+            document.getElementById("appearprecedent").innerHTML = '<a><button class="precedentbutton grid" onclick="decr()">Précédent</button></a>';      
         }
-        if(taille > 2){
+        if(taille == 3){
             document.getElementById("tableau1style").width = "300";
             document.getElementById("tableau1style").style.filter="none";
-            document.getElementById("appearprecedent").innerHTML = '<a><button class="precedentbutton grid" >précédent</button></a>';
-            document.getElementById("appearsuivant").innerHTML = '<a><button class="suivantbutton grid" >suivant</button></a>';
+            document.getElementById("nextbtn").innerHTML = "Finir";
+            
         }
+        if(taille > 3){
+            location.href = "./selection.html";
+            storeu();
+            taille = 3;  
+            
+        }
+        if(taille <=0){
+            taille = 1;
+        }
+        console.log(taille);
+    }
+
+    function decr(){
+        taille = taille - 1;
         
+        if(taille == 1){
+            document.getElementById("tableau1style").width = "400";
+            document.getElementById("tableau1style").style.filter="saturate(0%) blur(7px)";
+            document.getElementById("appearprecedent").innerHTML = '';        
+        }
+        if(taille == 2){
+            document.getElementById("tableau1style").width = "350";
+            document.getElementById("tableau1style").style.filter="saturate(50%) blur(4px)";
+            document.getElementById("appearprecedent").innerHTML = '<a><button class="precedentbutton grid" onclick="decr()">Précédent</button></a>';
+            document.getElementById("nextbtn").innerHTML = "Suivant";  
+        }
+        if(taille == 3){
+            document.getElementById("tableau1style").width = "300";
+            document.getElementById("tableau1style").style.filter="none";      
+            taille = 2;  
+        }
+        if(taille > 3){    
+            taille = 3;  
+        }
+        if(taille <=0){
+            taille = 1;
+        }
+        console.log(taille);        
     }
 
 </script>
