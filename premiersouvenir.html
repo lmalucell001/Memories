@@ -54,16 +54,15 @@
 </body>
 <script>
     var tabl1 = "1";
-    var tabl2;
-    var tabl3;
+    var tabl2 = "0";
+    var tabl3 = "0";
 
-    function getfrom(){
-        var tabl2 = sessionStorage.getItem("tableau2");
-        var tabl3 = sessionStorage.getItem("tableau3");
+        tabl2 = sessionStorage.getItem("tableau2");
+        tabl3 = sessionStorage.getItem("tableau3");
         console.log(tabl1);
         console.log(tabl2);
         console.log(tabl3);
-    }
+        
     function storeu(){
         console.log("appuis");
         sessionStorage.setItem("tableau1", tabl1);
@@ -87,9 +86,5 @@
         }
         
     }
-    function hello() {
-        alert('Hello');
-    }
-    getfrom();
 </script>
 </html>

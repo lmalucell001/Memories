@@ -9,44 +9,12 @@
     <title>Memories</title>
 </head>
 <script>
-    function getfrom(){
         var tabl1 = sessionStorage.getItem("tableau1");
         var tabl2 = sessionStorage.getItem("tableau2");
         var tabl3 = sessionStorage.getItem("tableau3");
         console.log(tabl1);
         console.log(tabl2);
         console.log(tabl3);
-        if(tabl1 == "1"){
-            document.getElementById("tableau1style").style.filter="none";
-        }
-        if(tabl2 == "1"){
-            document.getElementById("tableau2style").style.filter="none";
-        }
-        if(tabl3 == "1"){
-            document.getElementById("tableau3style").style.filter="none";
-        }
-    }    
-    getfrom();
-
-    function store(){
-        sessionStorage.setItem("tableau1", tabl1);
-        sessionStorage.setItem("tableau2", tabl2);
-        sessionStorage.setItem("tableau3", tabl3);
-        location.href = "./selection.html";
-    }
-
-    function souv1(){
-        location.href = "./premiersouvenir.html";
-        store()
-    }
-    function souv2(){
-        location.href = "./secondsouvenir.html";
-        store()
-    }
-    function souv3(){
-        location.href = "./troisiemesouvenir.html";
-        store()
-    }
 </script>
 
 <body class="outside_body">
@@ -80,7 +48,7 @@
         </div>
 
         <div class="image_sel">
-            <img id="tableau1style" src="./assets/paysage_vide_sel.jpg" width="200px" alt="" style="filter: saturate(0) blur(7px);" onclick="souv1()"><br>
+            <img id="tableau1style" src="./assets/paysage_vide_sel.jpg" width="200px" alt="" style="filter: saturate(0) blur(7px);" onclick="souv1()">
         </div>
 
         <div class="image_sel">
@@ -93,9 +61,41 @@
 
         <div class="titre_selection grid">
             <div style="width: 50vw;">
-                <h5>Découvrez quelle histoire il renferme</h5>
+                <h5>Découvrez quelle histoire ils renferment</h5>
             </div>
         </div>
     </div>
 </body>
+
+<script>
+        if(tabl1 == "1"){
+            document.getElementById("tableau1style").style.filter="none";
+        }
+        if(tabl2 == "1"){
+            document.getElementById("tableau2style").style.filter="none";
+        }
+        if(tabl3 == "1"){
+            document.getElementById("tableau3style").style.filter="none";
+        }
+
+    function store(){
+        sessionStorage.setItem("tableau1", tabl1);
+        sessionStorage.setItem("tableau2", tabl2);
+        sessionStorage.setItem("tableau3", tabl3);
+        location.href = "./selection.html";
+    }
+
+    function souv1(){
+        store();
+        location.href = "./premiersouvenir.html";
+    }
+    function souv2(){
+        store();
+        location.href = "./secondsouvenir.html";
+    }
+    function souv3(){
+        store();
+        location.href = "./troisiemesouvenir.html";
+    }
+</script>
 </html>
