@@ -24,7 +24,7 @@ body{
 .outside_body .button1{
     background-color: var(--couleur2);
     border: none;
-    border-radius: 3px;
+     
 }
 
 .inside_body{
@@ -35,21 +35,20 @@ body{
     border: solid;
     border-color: #F3E1D7;
     border-width: 2px;
-    border-radius: 3px;
+     
 }
 .inside_body .precedentbutton{
     background-color: transparent;
     border: solid;
     border-color: #F3E1D7;
     border-width: 2px;
-    border-radius: 3px;
+     
 }
 .inside_body .suivantbutton{
     background-color: var(--couleur3);
     border: solid;
     border-color: var(--couleur3);
     border-width: 2px;
-    border-radius: 5px;
 }
 
 .titre_home{
@@ -205,7 +204,7 @@ body{
         font-size: 10px;
     }
     .inside_body .button1{
-        width: 210px;
+        width: 230px;
         height: 45px;
         font-size: 17px;
     }
@@ -236,12 +235,17 @@ body{
     }
 }
 @media screen and (min-width: 620px){
-    .retourSel.button1{
+    .retourSel .button1{
         width: 296px;
         height: 100px;
         font-size: 22px;
     }
-    .outside_body.button1{
+    .outside_body .button1{
+        width: 296px;
+        height: 56px;
+        font-size: 22px;
+    }
+    .inside_body .button1{
         width: 296px;
         height: 56px;
         font-size: 22px;
@@ -274,12 +278,12 @@ body{
     body{
         font-size: 18px;
     }
-    .inside_body.button1{
+    .inside_body .button1{
         width: 330px;
         height: 60px;
         font-size: 25px;
     }
-    .outside_body.button1{
+    .outside_body .button1{
         width: 330px;
         height: 60px;
         font-size: 25px;
@@ -311,16 +315,16 @@ body{
     body{
         font-size: 20px;
     }
-    .inside_body.button1{
+    .inside_body .button1{
         width: 400px;
         height: 70px;
-        border-radius: 3px;
+         
         font-size: 30px;
     }
-    .outside_body.button1{
+    .outside_body .button1{
         width: 400px;
         height: 70px;
-        border-radius: 3px;
+         
         font-size: 30px;
     }
     .inside_body .retourSel{ 
