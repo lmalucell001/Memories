@@ -35,6 +35,7 @@ body{
     border: solid;
     border-color: #F3E1D7;
     border-width: 2px;
+    color: #F3E1D7;
      
 }
 .inside_body .precedentbutton{
@@ -181,7 +182,6 @@ body{
 .inside_body .button1{
     font-weight: normal;
     font-family: 'Zenkaku medium';
-    color: var(--couleur4);
     font-size: 1.5em;
 }
 .inside_body .precedentbutton{
@@ -204,9 +204,9 @@ body{
         font-size: 10px;
     }
     .inside_body .button1{
-        width: 230px;
-        height: 45px;
-        font-size: 17px;
+        width: 175px;
+        height: 35px;
+        font-size: 14px;
     }
     .outside_body .button1{
         width: 291px;
@@ -232,6 +232,9 @@ body{
         width: 140px;
         height: 45px;
         font-size: 18px;
+    }
+    .image_sel{
+        width: 100%;
     }
 }
 @media screen and (min-width: 620px){
@@ -369,6 +372,8 @@ body{
 .foregroundinside{
     height: 100vh;
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
@@ -382,7 +387,7 @@ body{
 .retourSel{   
     display: flex;
     height: 20vh;
-    width: 30%;
+    width: 100%;
 }
 .suivant{   
     display: grid;
